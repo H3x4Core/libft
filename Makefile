@@ -4,7 +4,7 @@ CC			= gcc
 
 CFLAGS		= -Wall -Wextra -Werror
 
-INCLUDES	= -I include/
+INCLUDE	= -I include/
 
 FCNF		= fcn/
 
@@ -17,7 +17,7 @@ OBJS		= ${SRCS:.c=.o}
 RM			= rm -f
 
 .c.o	:
-			${CC} ${CFLAGS} ${INCLUDES} -c $< -o $@
+			${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
 
 all		:	${NAME}
 
