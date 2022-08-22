@@ -4,13 +4,13 @@ CC			= gcc
 
 CFLAGS		= -Wall -Wextra -Werror
 
-INCLUDES	= -I includes/
+INCLUDES	= -I include/
 
-FTCF		= ftc/
+FCNF		= fcn/
 
-FTCS		= ${FTCF}ft_isalpha.c ${FTCF}ft_isdigit.c ${FTCF}ft_isalnum.c ${FTCF}ft_isascii.c ${FTCF}ft_isprint.c ${FTCF}ft_strlen.c
+FCNS		= ${FCNF}ft_isalpha.c ${FCNF}ft_isdigit.c ${FCNF}ft_isalnum.c ${FCNF}ft_isascii.c ${FCNF}ft_isprint.c ${FCNF}ft_strlen.c
 
-SRCS		= ${FTCS}
+SRCS		= ${FCNS}
 
 OBJS		= ${SRCS:.c=.o}
 
