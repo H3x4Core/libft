@@ -6,7 +6,7 @@
 /*   By: matwinte <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 21:49:29 by matwinte          #+#    #+#             */
-/*   Updated: 2022/08/22 22:39:26 by matwinte         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:47:37 by matwinte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,13 @@ int	ft_isprint(char c);
 
 // str
 int	ft_strlen(char *str);
+
+#endif
+
+#ifndef DEBUG
+# define DEBUG 1
+
+# include <stdio.h>
+# include <ctype.h>
 
 #endif
